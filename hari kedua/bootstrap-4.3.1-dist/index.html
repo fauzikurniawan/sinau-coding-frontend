@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html>
+<html>
+
+<head>
+    <title>Belajar Bootstrap</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <style>
+        .main-content .media {
+            border-bottom: 1px solid black;
+            padding: 15px;
+        }
+
+        .main-content .media img {
+            padding: 15px;
+        }
+
+        .main-content .col-9 {
+            background-color: white;
+        }
+
+        .main-content .col-3 {
+            background-color: gainsboro;
+        }
+
+        .main-content .col-3 .list-group {
+            background-color: transparent;
+        }
+
+        .main-content .media-body {
+            padding: 15px;
+        }
+
+        .jumbotron {
+            color: white;
+            font-size: 45px;
+            margin-bottom: 0%;
+            background-color: black;
+            box-sizing: border-box;
+            padding: 15px;
+        }
+
+        .jumbotron span {
+            font-size: 80px;
+            color: orange;
+            font: bold;
+            padding: 15x;
+        }
+
+        .nav {
+            font-size: 15px;
+            box-sizing: border-box;
+            background-color: gray;
+        }
+
+        .sidebar ul li {
+            background-color: transparent;
+        }
+
+        .sidebar {
+            border-bottom: 1px solid black;
+        }
+
+        .footer {
+            background-color: black;
+            color: white;
+            margin-bottom: 0%;
+        }
+        .col-3 .p {
+            border-bottom: 1px solid black;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="jumbotron jumbotron-fluid">
+        <div id="container">
+            <h1 class="display-4">HTML<span>5</span></h1>
+        </div>
+    </div>
+    <nav class="nav">
+        <a class="nav-link active" href="#">Active</a>
+        <a class="nav-link" href="#">Link</a>
+        <a class="nav-link" href="#">Link</a>
+        <a class="nav-link" href="#">Link</a>
+        <a class="nav-link" href="#">Link</a>
+    </nav>
+    <div class="main-content container-fluid">
+        <div class="row">
+            <div class="col-9">
+                <div class="media">
+                    <img src="vw.jpg" class="mr-3" alt="...">
+                    <div class="media-body">
+                        <h5 class="mt-0">Media heading</h5>
+                        Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin. Cras
+                        purus odio, vestibulum in vulputate at, tempus viverra turpis. Fusce condimentum nunc ac nisi
+                        vulputate fringilla. Donec lacinia congue felis in faucibus.
+                    </div>
+                </div>
+                <div class="media">
+                    <img src="vw.jpg" class="mr-3" alt="..." style="padding: 15px">
+                    <div class="media-body" ; style="padding: 15px">
+                        <h5 class="mt-0">Media heading</h5>
+                        Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin. Cras
+                        purus odio, vestibulum in vulputate at, tempus viverra turpis. Fusce condimentum nunc ac nisi
+                        vulputate fringilla. Donec lacinia congue felis in faucibus.
+                    </div>
+                </div>
+            </div>
+            <div class="col-3">
+                <p><b>Sidebar Links</b></p>
+                <div class="sidebar">
+                    <ul class="list-group list-group-flush">
+                        <li class="list-group-item"><a href="#">Link 1</a></li>
+                        <li class="list-group-item"><a href="#">Link 2</a></li>
+                        <li class="list-group-item"><a href="#">Link 3</a></li>
+                        <li class="list-group-item"><a href="#">Link 4</a></li>
+                        <li class="list-group-item"><a href="#">Link 5</a></li>
+                    </ul>
+                </div>
+                <p><b>Other widgets</b></p>
+                <div id="sidebar-description">
+                    Aliqua aute minim sint veniam esse cillum dolore dolor elit.
+                </div>
+            </div>
+
+        </div>
+    </div>
+    <div class="footer text-center py-3">Copyright
+        <a href="#">Your sites</a><span>. All right reserved</span>
+    </div>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/jquery-3.3.1.slim.min.js"></script>
+    <script src="js/popper.min.js"></script>
+</body>
+
+</html>

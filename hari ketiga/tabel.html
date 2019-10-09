@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Tabel</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <style>
+        body {
+            min-height: 100vh;
+            align-items: center;
+            display: flex;
+        }
+        .container {
+            padding-top: 15px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container shadow-lg">
+        <table class="table table-bordered">
+            <thead>
+                <tr>
+                    <th scope="col">No</th>
+                    <th scope colspan="2" style="text-align: center;">Jenis Kelamin</th>
+                    <th scope="col" style="text-align: right;">Uang Saku</th>
+                </tr>
+            </thead>
+            <thead>
+                <tr>
+                    <th scope="col">No</th>
+                    <th scope="col">Nama</th>
+                    <th scope="col" style="text-align: center;">Jenis Kelamin</th>
+                    <th scope="col" style="text-align: right;">Uang Saku</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <th scope rowspan="2">1</th>
+                    <td rowspan="2">Mark</td>
+                    <td style="text-align: center;">L</td>
+                    <td style="text-align: right;">Rp 5000,00</td>
+                </tr>
+                <tr>
+                    <td style="text-align: center;">L</td>
+                    <td style="text-align: right;">Rp 5000,00</td>
+                </tr>
+                <tr>
+                    <th scope="row">2</th>
+                    <td scope="row">Larry</td>
+                    <td style="text-align: center;">L</td>
+                    <td style="text-align: right;">Rp 5000,00</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/jquery-3.3.1.slim.min.js"></script>
+    <script src="js/popper.min.js"></script>
+</body>
+
+</html>
