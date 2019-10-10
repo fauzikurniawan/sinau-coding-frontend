@@ -14,61 +14,260 @@
 </head>
 
 <body>
+    <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+        aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    ...
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                    <button type="button" class="btn btn-primary">Save changes</button>
+                </div>
+            </div>
+        </div>
+    </div>
     <div class="container-fluid">
         <div class="d-flex">
             <div class="p-2 bg-info mr-auto" style="width: 300px; height: 940px">
                 <div class="sidebar">
                     <div class="form-group">
-                        <h4 class="d-flex justify-content-center">Onlieshop.com</h4>
+                        <h4 class="d-flex justify-content-center"><a href="#" style="color: white">Onlineshop.com</a>
+                        </h4>
                     </div>
-                    <div class="list-group">
-                        <div class="form-group">
-
-                            <a href="#" class="d-flex align-item-center"
-                                style="background-color: transparent; border: 0; color: white; margin-left: 23px;">
-                                <span class="mr-2">
-                                    <i class="material-icons">dashboard</i>
-                                </span>
-                                Dashboard
-                            </a>
-
-                        </div>
-                        <div class="for-group">
-
-                            <a href="#" class="d-flex align-item-center"
-                                style="background-color: transparent; border: 0; color: white; margin-left: 23px;">
-                                <span class="mr-2">
-                                    <i class="material-icons">perm_contact_calendar</i>
-                                </span>
-                                Kontak
-                            </a>
-
+                    <div class="nav-container">
+                        <div class="list-group">
+                            <div class="list-group-item" style="background-color: transparent; border: 0">
+                                <a href="#" class="d-flex align-item-center" style="color: white">
+                                    <span class="mr-2">
+                                        <i class="material-icons">dashboard</i>
+                                    </span>
+                                    Dashboard
+                                </a>
+                            </div>
+                            <div class="list-group-item" style="background-color: transparent; border: 0">
+                                <a href="#" class="d-flex align-item-center" style="color: white">
+                                    <span class="mr-2">
+                                        <i class="material-icons">perm_contact_calendar</i>
+                                    </span>
+                                    Kontak
+                                </a>
+                            </div>
                         </div>
                     </div>
-
-
                 </div>
             </div>
-
-
-
-
             <div class="p-2 flex-fill" style="background-color: gainsboro">
                 <div class="sidebar">
                     <h4 class="d-flex justify-content-start" style="color: black; margin-left: 30px;">Dashboard</h4>
                 </div>
-            </div>
-            <div class="form-group">
-                <div class="card">
+                <div class="content">
+                    <div class="row">
+                        <div class="col-4 shadow" style="background-color: white; margin-left: 23px;">
+                            <div class="d-flex">
+                                <div class="p-3 flex-fill">
+                                    <h5>Growth</h5>
+                                </div>
+                                <div class="p-2 mr-4 flex-fill">
+                                    <button type="button" class="btn btn-success float-md-right">
+                                        <i class="material-icons">trending_up</i>
+                                    </button>
+                                </div>
+                            </div>
+                            <div class="d-flex">
+                                <div class="p-3 flex-fill">
+                                    <h2>36,254</h5>
+                                </div>
+                            </div>
+                            <div class="d-flex">
+                                <div class="p-2 mr-4 flex-fill">
+                                    <button type="button" class=" float-md-left"
+                                        style="color: red; background-color: transparent; border: 0ch;">
+                                        <i class="material-icons">
+                                            arrow_downward
+                                        </i>
+                                    </button>
 
+                                    <h6>G5,27% Since Last Month</h6>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-4 shadow" style="background-color: white; margin-left: 23px;">
+                            <div class="d-flex">
+                                <div class="p-3 flex-fill">
+                                    <h5>Customer</h5>
+                                </div>
+                                <div class="p-2 mr-4 flex-fill">
+                                    <button type="button" class="btn btn-info float-md-right">
+                                        <i class="material-icons">
+                                            group
+                                        </i>
+                                    </button>
+                                </div>
+                            </div>
+                            <div class="d-flex">
+                                <div class="p-3 flex-fill">
+                                    <h2>36,254</h5>
+                                </div>
+                            </div>
+                            <div class="d-flex">
+                                <div class="p-2 mr-4 flex-fill">
+                                    <button type="button" class=" float-md-left"
+                                        style="color: red; background-color: transparent; border: 0ch;">
+                                        <i class="material-icons">
+                                            arrow_downward
+                                        </i>
+                                    </button>
+                                    <h6>G5,27% Since Last Month</h6>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-3 shadow" style="background-color: white; margin-left: 23px;">
+                            <div class="d-flex">
+                                <div class="p-3 flex-fill">
+                                    <h5>Order</h5>
+                                </div>
+                                <div class="p-2 mr-4 flex-fill">
+                                    <button type="button" class="btn btn-primary float-md-right">
+                                        <i class="material-icons">
+                                            local_grocery_store
+                                        </i>
+                                    </button>
+                                </div>
+                            </div>
+                            <div class="d-flex">
+                                <div class="p-3 flex-fill">
+                                    <h2>36,254</h5>
+                                </div>
+                            </div>
+                            <div class="d-flex">
+                                <div class="p-2 mr-4 flex-fill">
+                                    <button type="button" class=" float-md-left"
+                                        style="color:green; background-color: transparent; border: 0ch;">
+                                        <i class="material-icons">
+                                            arrow_upward
+                                        </i>
+                                    </button>
+                                    <h6>G5,27% Since Last Month</h6>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <br>
+                    <div class="row">
+                        <div class="col-4 shadow" style="background-color: white; margin-left: 23px; height: 400px;">
+                            <div class="d-flex">
+                                <div class="p-3 flex-fill">
+                                    <h5 class="mb-4">Growth</h5>
+                                    <table class="table table-bordered">
+                                        <thead class="thead-dark">
+                                            <tr>
+                                                <th scope colspan="2" style="text-align: center;">Jenis Kelamin</th>
+                                                <th scope="col" style="text-align: right;">Uang Saku</th>
+                                            </tr>
+                                        </thead>
+                                        <thead class="thead-dark">
+                                            <tr>
+                                                <th scope="col">Nama</th>
+                                                <th scope="col" style="text-align: center;">Jenis Kelamin</th>
+                                                <th scope="col" style="text-align: right;">Uang Saku</th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <tr>
+                                                <td rowspan="2">Mark</td>
+                                                <td style="text-align: center;">L</td>
+                                                <td style="text-align: right;">Rp 5000,00</td>
+                                            </tr>
+                                            <tr>
+                                                <td style="text-align: center;">L</td>
+                                                <td style="text-align: right;">Rp 5000,00</td>
+                                            </tr>
+                                            <tr>
+                                                <td scope="row">Larry</td>
+                                                <td style="text-align: center;">L</td>
+                                                <td style="text-align: right;">Rp 5000,00</td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-2 shadow">
+                            <div class="card text-center bg-primary"
+                                style="width: 18rem; height: 190px; margin-left: 8px;">
+                                <div class="card-body">
+                                    <h5 class="card-title">25%</h5>
+                                    <p class="card-text">Kenaikan harga.</p>
+                                    <a href="#" class="btn btn-primary border 1px; solid">Read More</a>
+                                </div>
+                            </div>
+
+                            <div class="card" style="width: 18rem; margin-top: 13px; margin-left: 8px;">
+                                <h5 class="card-header" style="color: black;">Featured</h5>
+                                <div class="card-body">
+                                    <h5 class="card-title" style="color: black; margin-top: 2px;">Modal</h5>
+                                    <p class="card-text" style="color: black; font-size: 11px;">coba tampilkan modal
+                                        saat button di tekan</p>
+                                    <button type="button" class="btn btn-primary" data-toggle="modal"
+                                        data-target="#exampleModal">
+                                        Open
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-5" style="margin-left: 4rem;;">
+                            <div class="shadow p-4 bg-white rounded champaign-wrp" style="height: 400px;">
+                                <h5 class="mb-4">Champaign</h5>
+
+                                <div class="text-center mb-4" style="height: 150px;">
+                                    <i class="material-icons md-dark" style="font-size: 8rem;;">flag</i>
+                                </div>
+
+                                <div class="row text-center">
+                                    <div class="col-4">
+                                        <i class="text-secondary material-icons md-18 mb-4">send</i>
+                                        <h3 class="text-secondary">6,510</h3>
+                                        <div class="d-flex justify-content-center">
+                                            <div class="dott mr-2 bg-primary"></div>
+                                            <p>Total Sent</p>
+                                        </div>
+                                    </div>
+                                    <div class="col-4">
+                                        <i class="text-secondary material-icons md-18 mb-4">email</i>
+                                        <h3 class="text-secondary">322</h3>
+                                        <div class="d-flex justify-content-center">
+                                            <div class="dott mr-2 bg-info"></div>
+                                            <p>Reached</p>
+                                        </div>
+                                    </div>
+                                    <div class="col-4">
+                                        <i class="text-secondary material-icons md-18 mb-4">face</i>
+                                        <h3 class="text-secondary">121</h3>
+                                        <div class="d-flex justify-content-center">
+                                            <div class="dott mr-2 bg-warning"></div>
+                                            <p>Opened</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
+
         </div>
     </div>
-    <script src="js/bootstrap.min.js"></script>
     <script src="js/jquery-3.3.1.slim.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
     <script src="js/popper.min.js"></script>
-
 </body>
 
 </html>
