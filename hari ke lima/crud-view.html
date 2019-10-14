@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <link rel="stylesheet" href="css/crud-view.css">
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <link rel="stylesheet" href="css/main.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link href="https://fonts.googleapis.com/css?family=Roboto:300,400" rel="stylesheet">
+</head>
+<style>
+  .jumbotron {
+    background-color: #8aaae5;
+    height: 12rem;
+    margin-bottom: 0;
+    padding: 1rem;
+    ;
+  }
+
+  .nav {
+    background-color: #8aaae5;
+  }
+
+  h2 {
+    font-size: 50px;
+    margin-top: 20px;
+    color: white;
+  }
+
+  ul li a {
+    color: #8aaae5;
+  }
+
+  p {
+    color: aliceblue;
+    font-family: "Roboto", sans-serif;
+    font-weight: 0;
+  }
+
+  .footer {
+    background-color: #8aaae5;
+    margin: 0;
+  }
+
+  .footer p {
+    padding: 16px 0;
+    text-align: center;
+    color: white;
+    margin-bottom: 0;
+  }
+
+  .footer p span a {
+    color: rgb(235, 168, 45);
+  }
+</style>
+
+<body>
+  <div class="container-fluid">
+    <div class="nav">
+      <div class="container-fluid">
+        <h2 class="d-flex">
+          <span><i class="material material-icons" style="font-size: 5rem">add_shopping_cart</i></span>
+          <span>List Belanja.com</span>
+        </h2>
+        <p class="lead">
+          Siapkan list belanjamu untuk belanja lebih mudah
+        </p>
+      </div>
+
+    </div>
+    <div class="row">
+      <div class="col-3">
+        <div class="sidebar mt-3">
+          <div class="sidebar-content">
+            <div class="shadow p-4 mb-4 bg-white rounded">
+              <div class="navbar bg-light">
+                <input class="form-control form-control-light" type="text" placeholder="Search" aria-label="Search">
+              </div>
+
+              <h4>Kategori</h4>
+              <ul class="list-group">
+                <li class="list-group-item border-2">
+                  <a href="#" class="d-flex align-items-center">
+                    <span class="mr-2"><i class="material-icons">
+                        devices_other
+                      </i></span>
+                    <span>Elektronik</span>
+                  </a>
+                </li>
+                <li class="list-group-item border-2">
+                  <a href="#" class="d-flex align-items-center">
+                    <span class="mr-2"><i class="material-icons">
+                        fastfood
+                      </i></span>
+                    <span>Makana & Minuman</span>
+                  </a>
+                </li>
+                <li class="list-group-item border-2">
+                  <a href="#" class="d-flex align-items-center">
+                    <span class="mr-2"><i class="material-icons">
+                        sports_esports
+                      </i></span>
+                    <span>Gaming</span>
+                  </a>
+                </li>
+                <li class="list-group-item border-2">
+                  <a href="#" class="d-flex align-items-center">
+                    <span class="mr-2"><i class="material-icons">
+                        party_mode
+                      </i></span>
+                    <span>Kamera</span>
+                  </a>
+                </li>
+              </ul>
+              
+            </div>
+
+
+          </div>
+        </div>
+      </div>
+      <div class="col-9">
+        <div class="shadow p-4 mb-4 bg-white rounded">
+          <div id="demo" class="carousel slide" data-ride="carousel">
+
+            <!-- Indicators -->
+            <ul class="carousel-indicators">
+              <li data-target="#demo" data-slide-to="0" class="active"></li>
+              <li data-target="#demo" data-slide-to="1"></li>
+            </ul>
+
+            <!-- The slideshow -->
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <div class="carousel-caption">
+                  <h3>Fashion</h3>
+                  <p style="color: #8aaae5;">Input Daftar Belanja mu, agar hidup lebih mudah</p>
+                </div>
+                <img src="xx.jpg" alt="" style="width: 1350px; height: 400px; margin-top: 15px;">
+              </div>
+              <div class="carousel-item">
+                <img src="z.jpg" alt="">
+              </div>
+            </div>
+
+            <!-- Left and right controls -->
+            <a class="carousel-control-prev" href="#demo" data-slide="prev">
+              <span class="carousel-control-prev-icon"></span>
+            </a>
+            <a class="carousel-control-next" href="#demo" data-slide="next">
+              <span class="carousel-control-next-icon"></span>
+            </a>
+
+          </div>
+          <!-- <img src="xx.jpg" alt="" style="width: 1350px; height: 400px; margin-top: 15px;"> -->
+        </div>
+        <div class="form-group mt-4">
+          <button class="btn btn-primary" onclick="addRow()"><i class="material-icons">add</i>Add</button>
+        </div>
+        <div class="shadow p-4 mb-4 bg-white rounded">
+          <table class="table">
+            <thead class="thead-dark">
+              <tr>
+                <th>No</th>
+                <th>List belanja</th>
+                <th>Action</th>
+              </tr>
+            </thead>
+            <tbody id="table-data"></tbody>
+          </table>
+        </div>
+
+      </div>
+
+    </div>
+  </div>
+  <div class="footer row">
+    <div class="col-12">
+      <p>Copyright <span><a href="#">List Belanja.com</a></span>. All right reserved</p>
+    </div>
+  </div>
+
+  <script src="js/bootstrap.min.js"></script>
+  <script src="js/jquery-3.2.1.slim.min.js"></script>
+  <script src="js/popper.min.js"></script>
+  <script src="js/array-crud.js"></script>
+  <script src="js/array-crud-view-impl.js"></script>
+</body>
+
+</html>
